@@ -6,7 +6,7 @@
 
 ## Week 3
 
-# Interesting projects:
+### Interesting projects:
 
 the Thirsty Flamingo
 This project monitors the moisture levels in the soil of your houseplant. If the soil crosses the threshold programmed as "dry", a piezo speaker emits a noise to notify you to re-water the plant. Once the plant's soil has reached an adequate moisture level, the sound will no longer play.
