@@ -1,4 +1,4 @@
-# Digital-Electronics
+# Annika Bastacky Digital-Electronics
 
 ## Week 1
 
