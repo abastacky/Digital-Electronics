@@ -1,9 +1,5 @@
 # Annika Bastacky Digital-Electronics
 
-## Week 1
-
-## Week 2
-
 ## Week 3
 
 ### Interesting projects  
