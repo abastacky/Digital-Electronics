@@ -34,6 +34,8 @@ The garment is intended to encourage empathy, and highlight the emotional/dynami
 
 The garment opens up the problematic that touch depends on context, and cannot simply be reduced to a definitive yes/no/neutral. This is a conversation piece, an instigator of debate, a medium for exploring the arena of touch with others.
 
+This might be too complicated, but it would be cool to have some sort of physical interface where users could program/change their touch preferences in real time, so that the garment could respond to their changing preferences.
+
 
 ## Week 5
 
