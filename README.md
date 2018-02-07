@@ -28,11 +28,11 @@ Enables the detection of orientation or incline. They are comprised of a hollow 
 ## Week 4
 
 ### Project Proposal: Teach Me How to Relate
-A garment with Force Sensitive Resistors and/or flex sensors at strategic pressure points on the body. To be worn when getting to know someone new. The garment can be programmed with the wearer's specific touch preferences, and can be used to train others to relate to the wearer via touch. The garment will generate a noise denoting negative when a sensor corresponding to an off-limits area is touched. Neutral areas don’t make a noise. The garment will generate a noise denoting positive when a sensor corresponding to an area of affinity is touched.
+A garment with Force Sensitive Resistors, heat resistors, and/or flex sensors at strategic pressure points on the body. I'm conceiving of the garment as a shirt, with sensors embedded on the lower back, neck, crooks of elbows, and collar bone area. To be worn when getting to know someone new. The garment can be programmed with the wearer's specific touch preferences, and can be used to train others to relate to the wearer via touch. The garment will generate a noise denoting negative (or perhaps a red LED will light up) when a sensor corresponding to an off-limits or undesired area is touched. Sensors on neutral will not generate noise (or maybe they'll generate a tone denoting neutral, or cause a yellow LED to light up). The garment will generate a noise denoting positive (or cause a green LED to light up) when a sensor corresponding to an area of affinity is touched.
 
-The garment is intended to encourage empathy, and highlight the emotional/political/contextual quality of touch.
+The garment is intended to encourage empathy, and highlight the emotional/dynamic/contextual quality of touch.
 
-The garment opens up the problematic that touch depends on context, and cannot simply be reduced to a definitive yes/no/neutral. This is a conversation piece, an instigator of debate
+The garment opens up the problematic that touch depends on context, and cannot simply be reduced to a definitive yes/no/neutral. This is a conversation piece, an instigator of debate, a medium for exploring the arena of touch with others.
 
 
 ## Week 5
