@@ -27,7 +27,7 @@ Enables the detection of orientation or incline. They are comprised of a hollow 
 
 ## Week 4
 
-# Project Proposal: Teach Me How to Relate
+### Project Proposal: Teach Me How to Relate
 A garment with Force Sensitive Resistors and/or flex sensors at strategic pressure points on the body. To be worn when getting to know someone new. The garment can be programmed with the wearer's specific touch preferences, and can be used to train others to relate to the wearer via touch. The garment will generate a noise denoting negative when a sensor corresponding to an off-limits area is touched. Neutral areas don’t make a noise. The garment will generate a noise denoting positive when a sensor corresponding to an area of affinity is touched.
 
 The garment is intended to encourage empathy, and highlight the emotional/political/contextual quality of touch.
