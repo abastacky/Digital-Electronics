@@ -38,19 +38,15 @@ Or perhaps each sensor is placed corresponding to specific stories or experience
 
 The program will:
 -Read the amount of pressure or heat applied to a sensor
--Evaluate whether the location and amount of pressure/heat fits into the positive, neutral, or negative category
--Produce sound and light based on the "desirability" of this particular quality of touch
+-Evaluate whether the sensor is associated with the positive, neutral, or negative category
+-Light an LED based on the "desirability" of this particular quality of touch
+-Play an audio clip/anecdote corresponding to the story
 
 OR
 
 -read the amount of pressure on the sensor
 -evaluate how loud the audio should be played, based on pressure from the sensor
 -play back recorded story/audio corresponding to that particular area on the body
-
-OR
-
--sense the distance away from the viewer
--play stories at an inverse volume to the distance of the viewer from the garment
 
 
 ## Week 5
