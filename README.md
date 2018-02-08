@@ -49,6 +49,11 @@ OR
 -play back recorded story/audio corresponding to that particular area on the body
 
 
+![arduino_fsrs_speaker_schem](https://user-images.githubusercontent.com/35578999/35995742-2879e874-0cc9-11e8-869a-a08173f74db2.png)
+![arduino_fsrs_speaker_bb](https://user-images.githubusercontent.com/35578999/35995757-33f9d29a-0cc9-11e8-9aef-1b4cdea051ff.png)
+<img width="560" alt="screen shot 2018-02-08 at 12 10 28 pm" src="https://user-images.githubusercontent.com/35578999/35995769-3b0a46c8-0cc9-11e8-8364-f9126a68d315.png">
+
+
 ## Week 5
 
 ## Week 6
