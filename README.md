@@ -47,6 +47,11 @@ OR
 -evaluate how loud the audio should be played, based on pressure from the sensor
 -play back recorded story/audio corresponding to that particular area on the body
 
+OR
+
+-sense the distance away from the viewer
+-play stories at an inverse volume to the distance of the viewer from the garment
+
 
 ## Week 5
 
