@@ -1,10 +1,10 @@
 #include "pitches.h"
 
-bool running = false;         //setting up a boolean to turn on LED and speaker tone when FSR is pressed
+bool running = false;         //setting up a boolean to turn on LED and speaker tone when FSR is pressed. default is off.
 
 const int threshold = 30;    // minimum reading of the sensors that generates a note
-const int thisSensor = A0;
-const int LEDpin = 12;
+const int thisSensor = A0;   //FSR is connected to A0
+const int LEDpin = 12;      //LED is connected to pin 12
 
 // notes to play, corresponding to the 3 sensors:
 int notes[] = {
@@ -30,7 +30,7 @@ void loop() {
       running = false;
     }
     Serial.println(running);
-
+    //if FSR is pressed, play a tone
     if(running){
       tone(8, notes[0], 20);
 
