@@ -1,4 +1,4 @@
-# Midterm Project
+# Midterm Project Documentation
 
 ## Teach Me to Relate
 
