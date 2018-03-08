@@ -12,6 +12,8 @@ With the help of the kind folks at the Hybrid Lab, I adapted the tone keyboard c
 
 ![ToneLED](Images/ToneLED.JPG)
 
+See it in action here: https://vimeo.com/259165555
+
 ### V1.1: Wave Shield + Audio File
 Since the ultimate goal is to generate specific sound clips when an FSR is touched, the next step was to figure out how to go from a simple tone generation to the playback of a sound file. I assembled a Wave Shield, which can play .wav files off of an SD card, following this comprehensive tutorial: https://cdn-learn.adafruit.com/downloads/pdf/adafruit-wave-shield-audio-shield-for-arduino.pdf. 
 
