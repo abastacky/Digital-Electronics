@@ -3,7 +3,7 @@
 ## Teach Me to Relate
 
 ### Concept: Create a wearable garment that plays stories based on location-specific touch
-![InitialDrawing](Images/InitialDrawing.JPG)
+![InitialDrawing](Images/InitialDrawing.jpg)
 (not sure why this image isn't loading--check the file in the Images folder)
 
 
