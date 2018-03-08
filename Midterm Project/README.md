@@ -3,6 +3,9 @@
 ## Teach Me to Relate
 
 ### Concept: Create a wearable garment that plays stories based on location-specific touch
+![initial drawing](Images/initial drawing.JPG)
+
+
 The basic functionality of the garment includes having a a force sensitive resistor read pressure (touch), and translating that into an audio tone, as well as lighting up an LED. 
 
 ### V1.0: Tone Keyboard + light up an LED
