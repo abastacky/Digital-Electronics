@@ -10,7 +10,7 @@ I followed instructions and used code that I found for a Tone Keyboard, using ju
 
 With the help of the kind folks at the Hybrid Lab, I adapted the tone keyboard code to include lighting up an LED when the FSR is pressed. This included adding a boolean statement, and putting both the tone generation and the LED illumination into an if statement, so that both would happen concurrently when the FSR threshold was reached. 
 
-![IMG_9592](Images/IMG_9592.JPG)
+![ToneLED](Images/ToneLED.JPG)
 
 ### V1.1: Wave Shield + Audio File
 Since the ultimate goal is to generate specific sound clips when an FSR is touched, the next step was to figure out how to go from a simple tone generation to the playback of a sound file. I assembled a Wave Shield, which can play .wav files off of an SD card, following this comprehensive tutorial: https://cdn-learn.adafruit.com/downloads/pdf/adafruit-wave-shield-audio-shield-for-arduino.pdf. 
