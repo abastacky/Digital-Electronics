@@ -3,6 +3,9 @@
 ## Teach Me to Relate
 
 ### Concept: Create a wearable garment that plays stories based on location-specific touch
+![initial drawing](Images/initial drawing.JPG)
+
+
 The basic functionality of the garment includes having a a force sensitive resistor read pressure (touch), and translating that into an audio tone, as well as lighting up an LED. 
 
 ### V1.0: Tone Keyboard + light up an LED
@@ -10,7 +13,9 @@ I followed instructions and used code that I found for a Tone Keyboard, using ju
 
 With the help of the kind folks at the Hybrid Lab, I adapted the tone keyboard code to include lighting up an LED when the FSR is pressed. This included adding a boolean statement, and putting both the tone generation and the LED illumination into an if statement, so that both would happen concurrently when the FSR threshold was reached. 
 
-![IMG_9592](Images/IMG_9592.JPG)
+![ToneLED](Images/ToneLED.JPG)
+
+See it in action here: https://vimeo.com/259165555
 
 ### V1.1: Wave Shield + Audio File
 Since the ultimate goal is to generate specific sound clips when an FSR is touched, the next step was to figure out how to go from a simple tone generation to the playback of a sound file. I assembled a Wave Shield, which can play .wav files off of an SD card, following this comprehensive tutorial: https://cdn-learn.adafruit.com/downloads/pdf/adafruit-wave-shield-audio-shield-for-arduino.pdf. 
@@ -21,5 +26,9 @@ I then found a sound file I liked (Cry to Me by Solomon Burke, a trusty classic!
 
 The next step was initializing the SD card, and finding the right code to make the audio file play. The challenge was to get the wave shield to play a specific track on the SD card, and not just cycle through all of the tracks stored on it. The key was using the PlayComplete function to specify a specific track on the SD card. Sudhu helped me debug this to see in the serial monitor when the specified track was playing. 
 
+watch it play here: https://vimeo.com/259166263
+
+### Future Functionality / Next Steps
+The next step would be connecting the FSR and LED to the wave shield, so that when the FSR is pressed, the track is played and the LED illuminates. Then I would compile stories, develop thematic audio clips, and set up multiple FSR's to trigger different audio tracks and light up different colored LED's. The final piece would be figuring out how to integrate sensors and LED's into a wearable, lightweight garment, perhaps with an arm/waist baind to hold the wave shield. I would explore smaller, wearable boards as well.
 
 
