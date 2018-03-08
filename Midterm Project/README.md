@@ -4,7 +4,6 @@
 
 ### Concept: Create a wearable garment that plays stories based on location-specific touch
 ![InitialDrawing](Images/InitialDrawing.jpg)
-(not sure why this image isn't loading--check the file in the Images folder)
 
 
 The basic functionality of the garment includes having a a force sensitive resistor read pressure (touch), and translating that into an audio tone, as well as lighting up an LED. 
@@ -15,6 +14,10 @@ I followed instructions and used code that I found for a Tone Keyboard, using ju
 With the help of the kind folks at the Hybrid Lab, I adapted the tone keyboard code to include lighting up an LED when the FSR is pressed. This included adding a boolean statement, and putting both the tone generation and the LED illumination into an if statement, so that both would happen concurrently when the FSR threshold was reached. 
 
 ![ToneLED](Images/ToneLED.JPG)
+
+Schematic:
+
+![ToneKeyboardLED](Images/ToneKeyboardLED.jpg)
 
 See it in action here: https://vimeo.com/259165555
 
