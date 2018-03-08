@@ -25,5 +25,7 @@ The next step was initializing the SD card, and finding the right code to make t
 
 watch it play here: https://vimeo.com/259166263
 
+### Future Functionality / Next Steps
+The next step would be connecting the FSR and LED to the wave shield, so that when the FSR is pressed, the track is played and the LED illuminates. Then I would compile stories, develop thematic audio clips, and set up multiple FSR's to trigger different audio tracks and light up different colored LED's. The final piece would be figuring out how to integrate sensors and LED's into a wearable, lightweight garment, perhaps with an arm/waist baind to hold the wave shield. I would explore smaller, wearable boards as well.
 
 
