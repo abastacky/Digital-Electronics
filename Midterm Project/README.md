@@ -4,6 +4,7 @@
 
 ### Concept: Create a wearable garment that plays stories based on location-specific touch
 ![initial drawing](Images/initial drawing.JPG)
+(not sure why this image isn't loading--check the file in the Images folder)
 
 
 The basic functionality of the garment includes having a a force sensitive resistor read pressure (touch), and translating that into an audio tone, as well as lighting up an LED. 
