@@ -23,5 +23,7 @@ I then found a sound file I liked (Cry to Me by Solomon Burke, a trusty classic!
 
 The next step was initializing the SD card, and finding the right code to make the audio file play. The challenge was to get the wave shield to play a specific track on the SD card, and not just cycle through all of the tracks stored on it. The key was using the PlayComplete function to specify a specific track on the SD card. Sudhu helped me debug this to see in the serial monitor when the specified track was playing. 
 
+watch it play here: https://vimeo.com/259166263
+
 
 
