@@ -4,5 +4,9 @@
 
 ![Photo](Photos/V1.jpg)
 
-### Project goals: using capacitive touch, light, sound, and haptic feedback, develop a delightful interaction that motivates users to execute their physical therapy regimen. Feedback should be readily understandable, and help users understand where they are in the process of completing their exercises. 
+### Project goal: 
+using capacitive touch, light, sound, and haptic feedback, develop a delightful interaction that motivates users to execute their physical therapy regimen. Feedback should be readily understandable, and help users understand where they are in the process of completing their exercises. 
+
+### Parts List: 
+Arduino UNO, AdaFruit WaveShield, AdaFruit MPR121 Capacitive Touch Breakout Board, 2 vibration motors, copper conductive fabric, pushbutton
 
