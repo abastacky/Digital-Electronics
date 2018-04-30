@@ -19,4 +19,4 @@ Having multiple feedback modalities was key here, in order to guide users throug
 See it in action here: https://vimeo.com/267320958
 
 ### Schematic:
-![photo](Photos/HandPhysicalTherapy.JPG)
+![HPT](Photos/HandPhysicalTherapy.JPG)
