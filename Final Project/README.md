@@ -15,3 +15,4 @@ Having multiple feedback modalities was key here, in order to guide users throug
 ![2](Photos/2.JPG)
 ![3](Photos/3.JPG)
  
+See it in action here: https://vimeo.com/267320958
