@@ -12,5 +12,5 @@ Arduino UNO, AdaFruit WaveShield, AdaFruit MPR121 Capacitive Touch Breakout Boar
 
 Having multiple feedback modalities was key here, in order to guide users through the direction and duration of each stretch, as well as the completion of a full round of stretching. I utilized the WaveShield in order to enable more complex sounds for the different feedback I needed to provide: right side touched, wrong side touched, completion/on/off.  I used the capacitive touch breakout board to accommodate more pins, since the WaveShield takes up many of them. Capacitive touch was certainly buggy, and the conductive fabric, used as a sensor, required a lot of grounding to make it stable, and produce a sound only when touched. I experimented with different ways of doing this, including wrapping the wires connecting the sensors with copper tape and grounding that, as well as adding alligator clips and connecting them to a grounded metal plate.  The neopixels were a good fit because they are chainable, and thus made coding sequential countdowns and flashing relatively simple. 
 
-![Photo](Photos/IMG_9904.jpg)
-![Photo](Photos/IMG_9905.jpg)
+!(Photos/IMG_9904.jpg)
+!(Photos/IMG_9905.jpg)
