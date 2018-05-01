@@ -30,8 +30,8 @@ WaveHC wave;      // This is the only wave (audio) object, since we will only pl
 #define NUMPIXELS 8
 Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 int delayval = 100; // delay for 1/10 sec
-const int motorPin1 = 8;
-const int motorPin2 = 9;
+const int motorPin1 = 8; // vibration motor #1
+const int motorPin2 = 9; // vibration motor #2
 
 
 //push button code
@@ -61,11 +61,11 @@ Adafruit_MPR121 cap = Adafruit_MPR121();
 // so we know when buttons are 'released'
 uint16_t lasttouched = 0;
 uint16_t currtouched = 0;
-int thumbcounter = 0;
-int thumbaudio = 0;
-int pinkiecounter = 0;
+int thumbcounter = 0;  //counts how many times the thumb capacitive sensor is touched
+int thumbaudio = 0;  
+int pinkiecounter = 0;  //counts how many times the pinkie capacitive sensor is touched
 int pinkieaudio = 0;
-bool thumbdone;
+bool thumbdone;  //determines whether the thumb or the pinkie side is the "active" side. touching other side will cue the "wrong" sound
 bool pinkiedone;
 
 
@@ -73,14 +73,14 @@ void setup() {
   pressed = false;
   putstring("Free RAM: ");       // This can help with debugging, running out of RAM is bad
   Serial.println(freeRam());      // if this is under 150 bytes it may spell trouble!
-  pinMode(motorPin1, OUTPUT);
-  pinMode(motorPin2, OUTPUT);
-  pinMode(buttonPin, INPUT);
+  pinMode(motorPin1, OUTPUT);   //vibration motor #1
+  pinMode(motorPin2, OUTPUT);   //vibration motor #2
+  pinMode(buttonPin, INPUT);    //pushbutton
 Serial.println(pressed);
 
 pixels.begin(); // This initializes the NeoPixel library.
 for(int i=0;i<NUMPIXELS;i++){
-//    // pixels.Color takes RGB values, from 0,0,0 up to 255,255,255
+//  begin by having all pixels off
     pixels.setPixelColor(i, pixels.Color(0,0,0));//set to off 
     pixels.show(); // This sends the updated pixel color to the hardware.
     
@@ -108,7 +108,7 @@ for(int i=0;i<NUMPIXELS;i++){
     sdErrorCheck();
     while(1);                            // then 'halt' - do nothing!
   }
-    
+//set thumb side as active side    
   thumbdone = false;
   
 // enable optimize read - some cards may timeout. Disable if you're having problems
@@ -170,7 +170,9 @@ void loop() {
         Serial.println("button was just pressed");
         Serial.println("Playing TURNON");
         playcomplete("TURNON.WAV");
+
         
+  //when button is pressed, turn all pixels to red      
       for(int i=0;i<NUMPIXELS;i++){
         pixels.setPixelColor(i, pixels.Color(255, 0, 0));
         pixels.setBrightness(60);
@@ -178,7 +180,7 @@ void loop() {
       }   
     }
 
-// //might be the culprit
+// if pushbutton is pressed a second time, turn all pixels off again
  if (pressed == false) {
     for(int i=0;i<NUMPIXELS;i++){  
     pixels.setPixelColor(i, pixels.Color(0, 0, 0));
@@ -226,7 +228,7 @@ void loop() {
       blackout();      
                   
       
-//pulse when 6 seconds has passed 
+//vibrate when 6 seconds has passed 
 //      delay(6000);
       digitalWrite(motorPin1, HIGH);
       delay(800);
@@ -241,6 +243,7 @@ void loop() {
       Serial.println(thumbcounter);
     }
 
+    //if pinkie side is touched
       if ((currtouched & _BV(10)) && !(lasttouched & _BV(10)) ) {
       Serial.println("wrong side!");  
       playcomplete("WRONG.WAV");
@@ -337,8 +340,8 @@ void loop() {
       thumbcounter = 0;
       thumbaudio = 0;
     }
+    
 //now for the pinkie sensor  
-//  
 if (thumbdone == true) {
  // it if *is* touched and *wasnt* touched before, alert!
     if ((currtouched & _BV(10)) && !(lasttouched & _BV(10)) ) {
@@ -346,7 +349,8 @@ if (thumbdone == true) {
       pinkieaudio++;
       Serial.println(pinkieaudio);
       playcomplete("End.WAV");
-
+      
+//flash pixels for 6 seconds
       blackout();
       lightup();
       blackout();
@@ -361,7 +365,7 @@ if (thumbdone == true) {
       lightup(); 
       blackout(); 
       
-//      delay(6000);
+// vibration when 6 seconds have passed
       digitalWrite(motorPin2, HIGH);
       delay(800);
       digitalWrite(motorPin2, LOW);
@@ -373,7 +377,7 @@ if (thumbdone == true) {
       pinkiecounter++;
       Serial.println(pinkiecounter);
     }
-
+//if thumb side is touched
       if ((currtouched & _BV(2)) && !(lasttouched & _BV(2)) ) {
         Serial.println("wrong side!");
       playcomplete("WRONG.WAV");
@@ -464,7 +468,7 @@ if (thumbdone == true) {
     }
   }
 
-
+//once the whole round of both sides is complete, play a tune!
       if (pinkiecounter == 8){
       playcomplete("TURNON.WAV");
       pinkiecounter = 0;
